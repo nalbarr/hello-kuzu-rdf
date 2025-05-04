@@ -1,0 +1,23 @@
+@prefix kz: <http://kuzu.io/rdf-ex#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+kz:Chicago a kz:City ;
+        kz:name "Chicago"@en ;
+        kz:population 2600000 .
+
+kz:Adam a kz:student ;
+    kz:livesIn kz:Chicago ;
+    kz:name "Luke" ;
+    kz:age 24 .
+
+kz:employee rdfs:subClassOf kz:person .
+
+kz:Luke a kz:employee ;
+       kz:bornIn kz:Chicago ;
+       kz:name "Luke" .
+
+kz:Ryan a kz:manager ;
+     kz:name "Ryan" .
+
+kz:manager rdfs:subClassOf kz:person .
